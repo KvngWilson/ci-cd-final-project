@@ -16,6 +16,7 @@ def health():
     """Health Status"""
     return jsonify(dict(status="OK")), status.HTTP_200_OK
 
+
 ############################################################
 # Index page
 ############################################################
@@ -29,6 +30,7 @@ def index():
         version="1.0.0",
         url=url_for("list_counters", _external=True),
     )
+
 
 ############################################################
 # List counters
